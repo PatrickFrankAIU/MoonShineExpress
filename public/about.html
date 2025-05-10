@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Lexend+Deca:wght@100..900&family=Limelight&family=Martel:wght@200;300;400;600;700;800;900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <!-- GOOGLE FONT -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Lunar Sparkle Jewelry</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="icon" type="image/png" href="images/faviconDiamond.png">
+    <script src='main.js'></script>
+</head>
+
+<body>
+    <header>
+        <!-- Dark mode toggle -->
+        <div class="sliderDark">
+            <p>Toggle Light Mode</p>
+            <label class="switch">
+                <input type="checkbox" id="darkModeToggle" onclick="toggleDarkMode()">
+                <span class="slider"></span>
+            </label>
+        </div>
+        
+        <h1>About Us</h1>
+        <nav class="pageLinks">
+            <ul>
+                <li class="navigation"><a href="index.html">Home</a></li>
+                <li class="navigation"><a href="about.html">About Us</a></li>
+                <li class="navigation"><a href="products.html">Products</a></li>
+                <li class="navigation cart-link">
+                    <a href="cart.html">
+                        Cart <span id="cartCount" class="cart-count">0</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <figure>
+            <img src="logo.png" alt="Lunar Sparkle Jewelry logo">
+            <figcaption class="centered-figure">Our company logo</figcaption>
+        </figure>
+        <section>
+            <h2>Our Mission</h2>
+            <p>At Lunar Sparkle Jewelry, we're dedicated to creating beautiful, sustainable jewelry that you can feel
+                good about wearing.</p>
+        </section>
+        <br>
+        <div class="headshotContainer">
+            <div class="headshotCard">
+                <img src="./headshots/headshot1.jpg">
+                <p class="headshotName">Elena Rivera</p>
+                <p class="headshotTitle">Creative Director</p>
+                <p class="headshotBio">With a background in fine arts and fashion design, Elena leads the creative
+                    vision for every jewelry collection at Lunar Sparkle.</p>
+                <button class="emailButton" type="submit"><a class="emailLink"
+                        href="https://en.wikipedia.org/wiki/American_Shorthair">Email</a></button>
+            </div>
+            <div class="headshotCard">
+                <img src="./headshots/headshot2.jpg">
+                <p class="headshotName">Sophia Miller</p>
+                <p class="headshotTitle">Sustainability Director</p>
+                <p class="headshotBio">Sophie ensures every piece meets eco-friendly standards, sourcing ethical
+                    materials and reducing waste throughout production.</p>
+                <button class="emailButton" type="submit"><a class="emailLink"
+                        href="https://en.wikipedia.org/wiki/British_Shorthair">Email</a></button>
+            </div>
+            <div class="headshotCard">
+                <img src="./headshots/headshot3.jpg">
+                <p class="headshotName">Marcus Rivers</p>
+                <p class="headshotTitle">Lead Jeweler</p>
+                <p class="headshotBio">With over 15 years of experience in custom gold and platinum work, Marcus brings
+                    craftsmanship to our modern designs.</p>
+                <button class="emailButton" type="submit"><a class="emailLink"
+                        href="https://en.wikipedia.org/wiki/Tabby_cat">Email</a></button>
+            </div>
+        </div>
+        <div class="headshotContainer">
+            <div class="headshotCard">
+                <img src="./headshots/headshot4.jpg">
+                <p class="headshotName">James Patel</p>
+                <p class="headshotTitle">Operations Manager</p>
+                <p class="headshotBio">James keeps everything running smoothly — from supply chain logistics to daily
+                    business operations at Lunar Sparkle HQ.</p>
+                <button class="emailButton" type="submit"><a class="emailLink"
+                        href="https://en.wikipedia.org/wiki/Bicolor_cat#Tuxedo_pattern">Email</a></button>
+            </div>
+            <div class="headshotCard">
+                <img src="./headshots/headshot5.jpg">
+                <p class="headshotName"> Leo Brooks</p>
+                <p class="headshotTitle">Marketing Manager</p>
+                <p class="headshotBio">Leo shapes the Lunar Sparkle voice and vibe, making sure every campaign sparkles
+                    just right.</p>
+                <button class="emailButton" type="submit"><a class="emailLink"
+                        href="https://en.wikipedia.org/wiki/Persian_cat">Email</a></button>
+            </div>
+            <div class="headshotCard">
+                <img src="./headshots/headshot6.jpg">
+                <p class="headshotName">Adrienne Moore</p>
+                <p class="headshotTitle">Gemstone Specialist</p>
+                <p class="headshotBio">Adrienne hand-selects every gem for quality and ethical sourcing, ensuring
+                    brilliance in every detail.</p>
+                <button class="emailButton" type="submit"><a class="emailLink"
+                        href="https://en.wikipedia.org/wiki/Himalayan_cat">Email</a></button>
+            </div>
+        </div>
+        <br>
+    </main>
+    <footer>
+        <div>
+            <p class="footerText1">Find us on social Media: <a href="https://www.facebook.com/"
+                    target="_blank">Facebook</a>, <a href="https://www.instagram.com/" target="_blank">Instagram</a>,
+                and <a href="https://www.twitter.com/" target="_blank">Twitter</a></p>
+            <div class="social-container">
+                <a href="https://www.facebook.com/" target="_blank"><img class="social" src="images/facebook.png"
+                        alt="Facebook Logo"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="images/instagram.avif"
+                        alt="Instagram Logo" class="socialInstagram"></a>
+                <a href="https://www.twitter.com/" target="_blank"><img class="social" src="images/twitter.webp"
+                        alt="Twitter Logo"></a>
+            </div>
+        </div>
+        <p class="footerText2">&copy; 2025 Lunar Sparkle Jewelry</p>
+    </footer>
+</body>
+
+</html>

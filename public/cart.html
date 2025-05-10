@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Lexend+Deca:wght@100..900&family=Limelight&family=Martel:wght@200;300;400;600;700;800;900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <!-- GOOGLE FONT -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart - Lunar Sparkle Jewelry</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="icon" type="image/png" href="images/faviconDiamond.png">
+    <script src='main.js'></script>
+</head>
+
+<body>
+    <header>
+        <!-- Dark mode toggle -->
+        <div class="sliderDark">
+            <p>Toggle Light Mode</p>
+            <label class="switch">
+                <input type="checkbox" id="darkModeToggle" onclick="toggleDarkMode()">
+                <span class="slider"></span>
+            </label>
+        </div>
+        <h1>Your Shopping Cart</h1>
+        <nav class="pageLinks">
+            <ul>
+                <li class="navigation"><a href="index.html">Home</a></li>
+                <li class="navigation"><a href="about.html">About Us</a></li>
+                <li class="navigation"><a href="products.html">Products</a></li>
+                <li class="navigation cart-link">
+                    <a href="cart.html">
+                        Cart <span id="cartCount" class="cart-count">0</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="cart-section">
+            <h2>Your Items</h2>
+            
+            <div id="cartItems" class="cart-items-container">
+                <!-- Cart items will be inserted here by JavaScript -->
+            </div>
+            
+            <div class="cart-summary">
+                <div class="cart-totals">
+                    <div class="total-line">
+                        <span>Subtotal:</span>
+                        <span id="subtotal">$0.00</span>
+                    </div>
+                    <div class="total-line">
+                        <span>Tax (7.25%):</span>
+                        <span id="tax">$0.00</span>
+                    </div>
+                    <div class="total-line total-line-final">
+                        <span>Total:</span>
+                        <span id="total">$0.00</span>
+                    </div>
+                    <div class="shipping-note">
+                        <p>✓ Free shipping on all orders!</p>
+                    </div>
+                </div>
+                
+                <div class="cart-actions">
+                    <a href="products.html" class="continue-shopping">Continue Shopping</a>
+                    <a href="confirmation.html" class="previous-order-btn">See Previous Order Confirmation</a>
+                    <button id="checkoutButton" class="checkout-btn">
+                        Proceed to Checkout
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Checkout Form -->
+            <div id="checkoutForm" class="checkout-form">
+                <h3>Checkout</h3>
+                <form id="checkout-form">
+                    <div class="form-group">
+                        <label for="customerName">Full Name:</label>
+                        <input type="text" id="customerName" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="customerEmail">Email Address:</label>
+                        <input type="email" id="customerEmail" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="customerAddress">Shipping Address:</label>
+                        <textarea id="customerAddress" required></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="paymentMethod">Payment Method:</label>
+                        <select id="paymentMethod" required>
+                            <option value="">Select payment method</option>
+                            <option value="credit">Credit Card</option>
+                            <option value="paypal">PayPal</option>
+                        </select>
+                    </div>
+                    
+                    <div id="creditCardFields" class="payment-fields" style="display: none;">
+                        <div class="form-group">
+                            <label for="cardNumber">Card Number:</label>
+                            <input type="text" id="cardNumber" placeholder="**** **** **** ****">
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group half">
+                                <label for="cardExpiry">Expiry Date:</label>
+                                <input type="text" id="cardExpiry" placeholder="MM/YY">
+                            </div>
+                            
+                            <div class="form-group half">
+                                <label for="cardCvv">CVV:</label>
+                                <input type="text" id="cardCvv" placeholder="***">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-actions">
+                        <button type="button" id="cancel-checkout-btn" class="cancel-btn">
+                            Cancel
+                        </button>
+                        <button type="submit" class="complete-order-btn">
+                            Complete Order
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <p class="footerText1">Find us on social Media: <a href="https://www.facebook.com/"
+                    target="_blank">Facebook</a>, <a href="https://www.instagram.com/" target="_blank">Instagram</a>,
+                and <a href="https://www.twitter.com/" target="_blank">Twitter</a></p>
+            <div class="social-container">
+                <a href="https://www.facebook.com/" target="_blank"><img class="social" src="images/facebook.png"
+                        alt="Facebook Logo"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="images/instagram.avif"
+                        alt="Instagram Logo" class="socialInstagram"></a>
+                <a href="https://www.twitter.com/" target="_blank"><img class="social" src="images/twitter.webp"
+                        alt="Twitter Logo"></a>
+            </div>
+        </div>
+        <p class="footerText2">&copy; 2025 Lunar Sparkle Jewelry</p>
+    </footer>
+</body>
+
+</html>

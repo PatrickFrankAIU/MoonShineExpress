@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Lexend+Deca:wght@100..900&family=Limelight&family=Martel:wght@200;300;400;600;700;800;900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <!-- GOOGLE FONT -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Confirmation - Lunar Sparkle Jewelry</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="icon" type="image/png" href="images/faviconDiamond.png">
+    <script src='main.js'></script>
+</head>
+
+<body>
+    <header>
+        <!-- Dark mode toggle -->
+        <div class="sliderDark">
+            <p>Toggle Light Mode</p>
+            <label class="switch">
+                <input type="checkbox" id="darkModeToggle" onclick="toggleDarkMode()">
+                <span class="slider"></span>
+            </label>
+        </div>
+        <h1>Order Confirmation</h1>
+        <nav class="pageLinks">
+            <ul>
+                <li class="navigation"><a href="index.html">Home</a></li>
+                <li class="navigation"><a href="about.html">About Us</a></li>
+                <li class="navigation"><a href="products.html">Products</a></li>
+                <li class="navigation cart-link">
+                    <a href="cart.html">
+                        Cart <span id="cartCount" class="cart-count">0</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="confirmation-section">
+            <div class="confirmation-header">
+                <h2>Thank You for Your Order!</h2>
+                <p class="confirmation-message">Your order has been successfully placed. We'll send you a confirmation email shortly.</p>
+            </div>
+            
+            <div class="confirmation-details">
+                <div class="order-info">
+                    <h3>Order Information</h3>
+                    <div class="info-group">
+                        <span class="info-label">Order Date:</span>
+                        <span id="orderDate" class="info-value"></span>
+                    </div>
+                    <div class="info-group highlight">
+                        <span class="info-label">Tracking Number:</span>
+                        <span id="trackingNumber" class="info-value"></span>
+                    </div>
+                </div>
+                
+                <div class="customer-info">
+                    <h3>Customer Information</h3>
+                    <div class="info-group">
+                        <span class="info-label">Name:</span>
+                        <span id="confirmationName" class="info-value"></span>
+                    </div>
+                    <div class="info-group">
+                        <span class="info-label">Email:</span>
+                        <span id="confirmationEmail" class="info-value"></span>
+                    </div>
+                    <div class="info-group">
+                        <span class="info-label">Shipping Address:</span>
+                        <span id="confirmationAddress" class="info-value"></span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="order-summary">
+                <h3>Order Summary</h3>
+                
+                <div id="orderedItems" class="ordered-items">
+                    <!-- Order items will be dynamically inserted here -->
+                </div>
+                
+                <div class="order-totals">
+                    <div class="total-line">
+                        <span>Subtotal:</span>
+                        <span id="confirmationSubtotal">$0.00</span>
+                    </div>
+                    <div class="total-line">
+                        <span>Tax (7.25%):</span>
+                        <span id="confirmationTax">$0.00</span>
+                    </div>
+                    <div class="total-line">
+                        <span>Shipping:</span>
+                        <span>FREE</span>
+                    </div>
+                    <div class="total-line total-line-final">
+                        <span>Total:</span>
+                        <span id="confirmationTotal">$0.00</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="confirmation-actions">
+                <a href="products.html" class="continue-shopping">Continue Shopping</a>
+                <a href="index.html" class="home-btn">Return to Home</a>
+            </div>
+            
+            <div class="tracking-section">
+                <h3>Order Tracking</h3>
+                <p>You can check your order status anytime by entering your tracking number below:</p>
+                
+                <div class="tracking-lookup">
+                    <form id="tracking-form">
+                        <div class="form-group tracking-input">
+                            <input type="text" id="lookupTrackingNumber" placeholder="Enter your tracking number">
+                            <button type="submit" class="tracking-btn">Check Status</button>
+                        </div>
+                    </form>
+                    <div id="tracking-result" class="tracking-result"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <p class="footerText1">Find us on social Media: <a href="https://www.facebook.com/"
+                    target="_blank">Facebook</a>, <a href="https://www.instagram.com/" target="_blank">Instagram</a>,
+                and <a href="https://www.twitter.com/" target="_blank">Twitter</a></p>
+            <div class="social-container">
+                <a href="https://www.facebook.com/" target="_blank"><img class="social" src="images/facebook.png"
+                        alt="Facebook Logo"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="images/instagram.avif"
+                        alt="Instagram Logo" class="socialInstagram"></a>
+                <a href="https://www.twitter.com/" target="_blank"><img class="social" src="images/twitter.webp"
+                        alt="Twitter Logo"></a>
+            </div>
+        </div>
+        <p class="footerText2">&copy; 2025 Lunar Sparkle Jewelry</p>
+    </footer>
+</body>
+
+</html>
