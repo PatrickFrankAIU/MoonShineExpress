@@ -1,0 +1,44 @@
+[
+  {
+    "id": "ring-g",
+    "name": "1/15 CT. Diamond Crescent Moon Ring",
+    "price": 289.99,
+    "image": "images/ring_g.webp",
+    "description": "1/15 CT. T.W. Diamond Crescent Moon and Eight-Point Star Open Ring in 10K Gold"
+  },
+  {
+    "id": "ring-s",
+    "name": "Sterling Silver Crescent Moon Ring",
+    "price": 149.99,
+    "image": "images/ring_s.webp",
+    "description": "CUOKA MIRACLE Moon Ring, S925 Sterling Silver Crescent Moon Ring"
+  },
+  {
+    "id": "gold-necklace",
+    "name": "14K Gold Crescent Moon Necklace",
+    "price": 349.99,
+    "image": "images/gold_necklace.webp",
+    "description": "Sofia Zakia Waning Crescent Moon Necklace in 14K Yellow Gold"
+  },
+  {
+    "id": "silver-necklace",
+    "name": "Silver Moon Charm Necklace",
+    "price": 179.99,
+    "image": "images/silver_necklace.webp",
+    "description": "Crescent Moon Charm Necklace With Blue Topaz Star In Sterling Silver"
+  },
+  {
+    "id": "earrings",
+    "name": "Diamond Star and Moon Earrings",
+    "price": 249.99,
+    "image": "images/earrings.webp",
+    "description": "Pave-Set Diamond Star and Moon Front-Back Dangle Earrings"
+  },
+  {
+    "id": "earrings-g",
+    "name": "Moonface Earrings with Diamonds",
+    "price": 229.99,
+    "image": "images/earrings_g.webp",
+    "description": "Hanging Crescent Moonface Earrings with Diamond Eyes"
+  }
+]
